@@ -1,5 +1,7 @@
 # 爪心（PetHome）
 
+[![静态检查](https://github.com/Apollo465/pethome/actions/workflows/checks.yml/badge.svg)](https://github.com/Apollo465/pethome/actions/workflows/checks.yml)
+
 > **v1.0.0 登录门禁（2026-09-15 追加）**：按审核意见 6，应用改为**必须先登录华为账号才能使用**：
 > 启动进入 `pages/Index.ets` 的登录门禁页，`service/AuthService.ets` 用 Account Kit 完成华为账号登录
 > （华为账号是实名账号，登录即完成真实身份核验），未登录不进主界面；
@@ -180,6 +182,26 @@ powershell -ExecutionPolicy Bypass -File D:\dev\pethome\scripts\run-on-emulator.
 ```
 
 注意：**模拟器可以直接安装未签名的 HAP**，所以本机验证不需要华为账号。真机调试则必须在 DevEco 里配置自动签名（需要登录华为账号）。
+
+## 持续集成
+
+`main` 分支带一个 GitHub Actions（[`checks.yml`](.github/workflows/checks.yml)），跑 [`scripts/ci-check.mjs`](scripts/ci-check.mjs)：
+
+* 所有 `.json` / `.json5` 能否解析（含 `module.json5`、`build-profile.json5`）
+* `app.json5` / `module.json5` 的必填字段，以及 `$string:`、`$media:`、`$color:`、`$profile:` 引用能否解析
+* `main_pages.json` 里的页面、`form_config.json` 里的卡片页、各 ability 的 `srcEntry` 是否都存在
+* `.ets` 里 200 多处 `$r('app.*')` 资源引用是否都能找到
+* 多语言 `element/string.json` 的键是否与 `base` 一致
+* 合规红线不回退：未声明网络权限、未残留已移除的云端 AI 字段
+* 防泄漏：已提交的文件里不能有签名材料（`*.p12` 等）与私钥
+
+本地同样能跑，只用 Node 内置模块，不需要装依赖：
+
+```powershell
+node scripts/ci-check.mjs
+```
+
+**为什么 CI 里没有 `assembleHap`**：HarmonyOS（非 OpenHarmony）的 SDK 与 hvigor 工具链随 DevEco Studio 分发、需要华为账号登录才能下载，GitHub 托管的 runner 上拿不到，所以公开仓库只能做静态检查。真要验证编译，得在装了 DevEco Studio 的机器上跑 `scripts/build-app.ps1`；工作流里留了自托管 runner 的示例注释，有构建机时可以启用。
 
 ## 开源
 

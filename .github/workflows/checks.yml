@@ -1,0 +1,36 @@
+name: 静态检查
+
+# 说明：这里刻意不跑 assembleHap。
+# HarmonyOS（非 OpenHarmony）的 SDK 与 hvigor 工具链随 DevEco Studio 分发、需要华为账号
+# 登录才能下载，GitHub 托管的 runner 上拿不到，所以公开仓库无法做真实构建。
+# 本工作流做的是不需要 SDK 也能跑、而且真能挡住低级错误与合规回退的检查，详见
+# scripts/ci-check.mjs 的注释。
+#
+# 如果以后你有了自签名证书与自己的构建机，可以把下面这段加到 jobs 里，用自托管 runner 出包：
+#
+#   build-hap:
+#     runs-on: [self-hosted, harmonyos]        # 需要一台装了 DevEco Studio 的机器
+#     steps:
+#       - uses: actions/checkout@v4
+#       - run: powershell -ExecutionPolicy Bypass -File scripts/build-app.ps1
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-checks:
+    name: 结构 / 资源 / 合规检查
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: 运行静态检查
+        run: node scripts/ci-check.mjs
