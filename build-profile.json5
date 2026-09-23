@@ -1,0 +1,72 @@
+{
+  "app": {
+    // 发布签名有两种做法（二选一）：
+    //
+    // 1）推荐：证书文件放本地，用命令行出正式包
+    //    powershell -ExecutionPolicy Bypass -File scripts\build-release.ps1 `
+    //      -Keystore signing\release.p12 -KeystorePwd *** -KeyPwd *** `
+    //      -KeyAlias debugKey -Cert signing\release.cer -Profile signing\release.p7b
+    //
+    // 2）在 DevEco 里配：File → Project Structure → Signing Configs，
+    //    取消自动签名后填入证书，IDE 会自己往下面写 signingConfigs，
+    //    同时在 products 里加 "signingConfig": "default"。结构形如：
+    //
+    // "signingConfigs": [
+    //   {
+    //     "name": "default",
+    //     "type": "HarmonyOS",
+    //     "material": {
+    //       "storeFile": "signing/release.p12",
+    //       "storePassword": "***",
+    //       "keyAlias": "debugKey",
+    //       "keyPassword": "***",
+    //       "certpath": "signing/release.cer",
+    //       "profile": "signing/release.p7b",
+    //       "signAlg": "SHA256withECDSA"
+    //     }
+    //   }
+    // ],
+    // 出上架用的 App Pack（.app）时，hvigor 需要 DevEco 加密格式的签名配置
+    // （明文口令会被拒绝：storePassword 长度必须 >= 32）。
+    // 本项目目前的正式包用 scripts/build-app.ps1 走 hap-sign-tool 签名，这里保持为空即可。
+    // 如果要在 DevEco 里出包：File → Project Structure → Signing Configs 配置一次，
+    // IDE 会自己把加密后的 signingConfigs 写回这里。
+    "signingConfigs": [],
+    "products": [
+      {
+        "name": "default",
+        "targetSdkVersion": "6.0.2(22)",
+        "compatibleSdkVersion": "6.0.2(22)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

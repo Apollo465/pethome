@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="padA" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#FFF7F4"/>
+      <stop offset="1" stop-color="#FFE6D8"/>
+    </linearGradient>
+    <filter id="shadowA" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#8E3A12" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+  <g transform="translate(540 528) scale(1.06) translate(-540 -528)">
+    <g filter="url(#shadowA)" transform="rotate(-8 512 545)">
+      <g fill="url(#padA)">
+
+    <ellipse cx="352" cy="450" rx="54" ry="71" transform="rotate(-26 352 450)"/>
+    <ellipse cx="452" cy="382" rx="58" ry="78" transform="rotate(-9 452 382)"/>
+    <ellipse cx="572" cy="382" rx="58" ry="78" transform="rotate(9 572 382)"/>
+    <ellipse cx="672" cy="450" rx="54" ry="71" transform="rotate(26 672 450)"/>
+
+    <path d="M512 842
+      C384 740 316 664 316 594
+      C316 524 378 484 425 484
+      C470 484 500 510 512 566
+      C524 510 554 484 599 484
+      C646 484 708 524 708 594
+      C708 664 640 740 512 842 Z"/>
+
+    <ellipse cx="436" cy="600" rx="46" ry="27" fill="#FFFFFF" opacity="0.45"
+      transform="rotate(-28 436 600)"/>
+
+    <path d="M786 274
+      C797 318 808 327 844 340
+      C808 353 797 362 786 406
+      C775 362 764 353 728 340
+      C764 327 775 318 786 274 Z"/>
+    <circle cx="712" cy="240" r="18" opacity="0.9"/>
+
+  </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- 概念 B：对话猫（会回答问题的毛孩子） -->
+  <defs>
+    <linearGradient id="bubB" x1="0.2" y1="0" x2="0.75" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.6" stop-color="#FFF7F4"/>
+      <stop offset="1" stop-color="#FFE7DA"/>
+    </linearGradient>
+    <filter id="shadowB" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#8E3A12" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowB)">
+    <!-- 耳朵 -->
+    <path fill="url(#bubB)" d="M318 372
+      C300 300 292 250 300 226
+      C312 214 372 236 452 300 Z"/>
+    <path fill="url(#bubB)" d="M706 372
+      C724 300 732 250 724 226
+      C712 214 652 236 572 300 Z"/>
+
+    <!-- 气泡本体 + 左下小尾巴 -->
+    <path fill="url(#bubB)" d="M512 300
+      C652 300 812 348 812 560
+      C812 700 690 790 512 790
+      C334 790 212 700 212 560
+      C212 348 372 300 512 300 Z"/>
+    <path fill="url(#bubB)" d="M356 742
+      C332 800 306 848 268 872
+      C332 878 396 838 428 782 Z"/>
+  </g>
+
+  <!-- 脸：两只眼睛 + 心形鼻子 + 胡须 -->
+  <g>
+    <ellipse cx="416" cy="548" rx="28" ry="38" fill="#F0703C"/>
+    <ellipse cx="608" cy="548" rx="28" ry="38" fill="#F0703C"/>
+    <path fill="#FF8A5B" d="M512 604
+      C494 586 478 578 478 598
+      C478 616 500 632 512 646
+      C524 632 546 616 546 598
+      C546 578 530 586 512 604 Z"/>
+    <g stroke="#FFC9A6" stroke-width="16" stroke-linecap="round" fill="none">
+      <path d="M268 546 C300 534 322 532 344 534"/>
+      <path d="M270 606 C302 604 324 606 346 612"/>
+      <path d="M756 546 C724 534 702 532 680 534"/>
+      <path d="M754 606 C722 604 700 606 678 612"/>
+    </g>
+  </g>
+</svg>

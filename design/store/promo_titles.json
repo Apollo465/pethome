@@ -1,0 +1,6 @@
+[
+  { "brand": "爪心", "shot": "n2_home_pet.jpeg", "bg": "#FFF3E9", "glow": "#FFD9BE", "title": "档案、待办、提醒", "subtitle": "一个 App 管好，数据只留在手机上" },
+  { "shot": "n7_food.jpeg", "bg": "#EAF7EF", "glow": "#BFE8CF", "title": "能不能吃，一秒查清楚", "subtitle": "结论来自本地知识库" },
+  { "shot": "n8_chat.jpeg", "bg": "#EAF2FB", "glow": "#C3DCF5", "title": "回答会带上它的档案", "subtitle": "答案来自本地知识库，应用不联网" },
+  { "shot": "n9_mine.jpeg", "bg": "#F2ECFA", "glow": "#D6C6F0", "title": "数据只留在这台手机", "subtitle": "不申请相册权限，应用无联网能力" }
+]

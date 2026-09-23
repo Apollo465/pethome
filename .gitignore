@@ -1,0 +1,24 @@
+/node_modules
+/oh_modules
+/local.properties
+/.idea
+**/build
+/.hvigor
+.cxx
+/.clangd
+/.clang-format
+/.clang-tidy
+**/.test
+/.appanalyzer
+/.preview
+*.p12
+*.cer
+*.p7b
+*.keystore
+*.jks
+*.pem
+*.key
+# 发布签名材料（私钥 + 口令）只留在本地，绝不入库
+/signing/
+.DS_Store
+Thumbs.db

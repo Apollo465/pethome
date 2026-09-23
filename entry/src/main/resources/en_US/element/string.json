@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Zhuaxin main module"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Pet health assistant (local knowledge base)"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Zhuaxin"
+    },
+    {
+      "name": "EntryFormAbility_desc",
+      "value": "Today's pet care tasks"
+    },
+    {
+      "name": "EntryFormAbility_label",
+      "value": "Pet Care"
+    },
+    {
+      "name": "widget_desc",
+      "value": "View today's reminders on the home screen"
+    },
+    {
+      "name": "widget_display_name",
+      "value": "Pet Care"
+    },
+    {
+      "name": "reason_reminder",
+      "value": "Used to remind you about vaccination, deworming and medication"
+    }
+  ]
+}

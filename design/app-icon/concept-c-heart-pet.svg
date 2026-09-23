@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- 概念 C：爱心毛孩子（猫耳 + 狗耳，心和脸合成一个形） -->
+  <defs>
+    <linearGradient id="faceC" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#FFF7F4"/>
+      <stop offset="1" stop-color="#FFE5D6"/>
+    </linearGradient>
+    <filter id="shadowC" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#8E3A12" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowC)">
+    <!-- 猫耳（左，尖）与狗耳（右，垂） -->
+    <path fill="url(#faceC)" d="M300 452
+      C286 366 288 306 302 282
+      C322 274 386 310 438 372 Z"/>
+    <path fill="url(#faceC)" d="M700 424
+      C742 356 796 332 820 356
+      C846 386 832 476 784 542
+      C750 570 712 550 700 502 Z"/>
+
+    <!-- 脸 = 心 -->
+    <path fill="url(#faceC)" d="M512 862
+      C360 750 268 672 268 556
+      C268 462 340 400 412 400
+      C458 400 496 424 512 468
+      C528 424 566 400 612 400
+      C684 400 756 462 756 556
+      C756 672 664 750 512 862 Z"/>
+  </g>
+
+  <!-- 五官 -->
+  <g>
+    <ellipse cx="428" cy="578" rx="26" ry="36" fill="#F0703C"/>
+    <ellipse cx="596" cy="578" rx="26" ry="36" fill="#F0703C"/>
+    <path fill="#FF8A5B" d="M512 638
+      C496 622 482 616 482 632
+      C482 648 502 662 512 674
+      C522 662 542 648 542 632
+      C542 616 528 622 512 638 Z"/>
+    <ellipse cx="392" cy="672" rx="46" ry="26" fill="#FFC9A6" opacity="0.55"/>
+    <ellipse cx="632" cy="672" rx="46" ry="26" fill="#FFC9A6" opacity="0.55"/>
+  </g>
+</svg>

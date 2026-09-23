@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <!-- 主题封面文字层：品牌名 / slogan / 三个卖点 / 页脚 -->
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif">
+    <text x="540" y="706" text-anchor="middle" fill="#FFFFFF" font-size="92" font-weight="bold">爪心</text>
+    <text x="540" y="778" text-anchor="middle" fill="#FFF0E8" font-size="36">AI 帮你科学养宠，吃对每一口</text>
+
+    <g>
+      <rect x="64" y="990" width="952" height="210" rx="40" fill="#FFFFFF"/>
+      <circle cx="168" cy="1095" r="48" fill="#FFEDE4"/>
+      <text x="168" y="1112" text-anchor="middle" font-size="44">🐾</text>
+      <text x="252" y="1082" fill="#1F1B18" font-size="40" font-weight="bold">宠物档案</text>
+      <text x="252" y="1136" fill="#8A8078" font-size="28">年龄、体重、过敏史，AI 回答自动带上</text>
+    </g>
+
+    <g>
+      <rect x="64" y="1236" width="952" height="210" rx="40" fill="#FFFFFF"/>
+      <circle cx="168" cy="1341" r="48" fill="#FFEDE4"/>
+      <text x="168" y="1358" text-anchor="middle" font-size="44">🍇</text>
+      <text x="252" y="1328" fill="#1F1B18" font-size="40" font-weight="bold">食物安全速查</text>
+      <text x="252" y="1382" fill="#8A8078" font-size="28">能吃 / 不能吃有据可依，结论不由 AI 编</text>
+    </g>
+
+    <g>
+      <rect x="64" y="1482" width="952" height="210" rx="40" fill="#FFFFFF"/>
+      <circle cx="168" cy="1587" r="48" fill="#FFEDE4"/>
+      <text x="168" y="1604" text-anchor="middle" font-size="44">⏰</text>
+      <text x="252" y="1574" fill="#1F1B18" font-size="40" font-weight="bold">提醒 + 桌面卡片</text>
+      <text x="252" y="1628" fill="#8A8078" font-size="28">疫苗驱虫不靠记性，桌面卡片随手打卡</text>
+    </g>
+
+    <text x="540" y="1800" text-anchor="middle" fill="#8A8078" font-size="30">爪心 v1.0.0 · AI 宠物健康管家</text>
+    <text x="540" y="1848" text-anchor="middle" fill="#B8AFA8" font-size="24">科普参考，不能替代执业兽医的诊断与治疗</text>
+  </g>
+</svg>

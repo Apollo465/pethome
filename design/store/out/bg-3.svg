@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <radialGradient id="top" cx="0.5" cy="0.06" r="0.75">
+      <stop offset="0" stop-color="#FFE3D2" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFE3D2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mark" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#FFF7F4"/>
+      <stop offset="1" stop-color="#FFE6D8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="#FFF9F6"/>
+  <rect width="1080" height="1920" fill="url(#top)"/>
+
+  <!-- 品牌标记 -->
+  <rect x="96" y="88" width="72" height="72" rx="22" fill="#FF8A5B"/>
+  <g transform="translate(132 124) scale(0.062) translate(-546 -518)">
+    <g transform="rotate(-8 512 545)">
+      <g fill="url(#mark)">
+
+    <ellipse cx="352" cy="450" rx="54" ry="71" transform="rotate(-26 352 450)"/>
+    <ellipse cx="452" cy="382" rx="58" ry="78" transform="rotate(-9 452 382)"/>
+    <ellipse cx="572" cy="382" rx="58" ry="78" transform="rotate(9 572 382)"/>
+    <ellipse cx="672" cy="450" rx="54" ry="71" transform="rotate(26 672 450)"/>
+
+    <path d="M512 842
+      C384 740 316 664 316 594
+      C316 524 378 484 425 484
+      C470 484 500 510 512 566
+      C524 510 554 484 599 484
+      C646 484 708 524 708 594
+      C708 664 640 740 512 842 Z"/>
+
+    <ellipse cx="436" cy="600" rx="46" ry="27" fill="#FFFFFF" opacity="0.45"
+      transform="rotate(-28 436 600)"/>
+
+    <path d="M786 274
+      C797 318 808 327 844 340
+      C808 353 797 362 786 406
+      C775 362 764 353 728 340
+      C764 327 775 318 786 274 Z"/>
+    <circle cx="712" cy="240" r="18" opacity="0.9"/>
+
+  </g>
+    </g>
+  </g>
+  <text x="192" y="139" font-family="Microsoft YaHei, PingFang SC, sans-serif"
+    font-size="38" font-weight="bold" fill="#1F1B18">爪心</text>
+
+  <text x="96" y="268" font-family="Microsoft YaHei, PingFang SC, sans-serif"
+    font-size="62" font-weight="bold" fill="#1F1B18">回答会带上它的档案</text>
+  <text x="96" y="330" font-family="Microsoft YaHei, PingFang SC, sans-serif"
+    font-size="30" fill="#8A8078">3 岁 2 个月、4.2kg，建议才对得上</text>
+</svg>

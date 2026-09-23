@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- 底色层：暖橙渐变 + 左上柔光，交给系统圆角遮罩直接裁切 -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0.12" y1="0" x2="0.88" y2="1">
+      <stop offset="0" stop-color="#FFB77F"/>
+      <stop offset="0.48" stop-color="#FF8A5B"/>
+      <stop offset="1" stop-color="#ED6534"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="0.3" cy="0.18" r="0.78">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgVin" cx="0.78" cy="0.95" r="0.7">
+      <stop offset="0" stop-color="#C2431A" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#C2431A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bgGrad)"/>
+  <rect width="1024" height="1024" fill="url(#bgGlow)"/>
+  <rect width="1024" height="1024" fill="url(#bgVin)"/>
+</svg>
